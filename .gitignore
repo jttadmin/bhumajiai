@@ -1,0 +1,32 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+# Runtime and interview history
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+history/
+recordings/
+transcripts/
+resumes/
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# Packaging
+build/
+dist/
+*.spec
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
