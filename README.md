@@ -1,4 +1,4 @@
-# Universal AI Interview Assistant V4 (Windows 11)
+# BhumajiAI (Windows 11)
 
 A desktop interview **practice** application built with PySide6 and OpenAI. Use audio recording and AI assistance only with the participants’ permission and according to applicable interview rules. No screen-capture bypass or stealth features are included.
 
@@ -17,7 +17,7 @@ A desktop interview **practice** application built with PySide6 and OpenAI. Use 
 5. Select a role, optionally paste a job description and load a resume, then enter or record questions.
 
 ## Packaging
-Run `build_exe.bat` after installation. Expected output: `dist\UniversalInterviewAssistant.exe`. Windows builds must be run on Windows. This is an **unverified build target**, not a prebuilt EXE.
+Run `build_exe.bat` after installation. Expected output: `dist\BhumajiAI.exe`. Windows builds must be run on Windows. This is an **unverified build target**, not a prebuilt EXE.
 
 ## Shortcuts
 - `Ctrl+Enter`: ask AI
@@ -43,14 +43,14 @@ Source has been syntax-checked in the build environment. Full Windows UI, audio,
 
 ## Publish to GitHub
 
-Create an empty GitHub repository named `universal-ai-interview-assistant` (do not initialize it with a README). From this extracted folder, run:
+Project repository: https://github.com/jttadmin/bhumajiai. To publish your own copy, create an empty repository named `bhumajiai`, then run:
 
 ```powershell
 git init
 git add .
-git commit -m "Initial commit: Universal AI Interview Assistant V4"
+git commit -m "Initial commit: BhumajiAI"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/universal-ai-interview-assistant.git
+git remote add origin https://github.com/YOUR_USERNAME/bhumajiai.git
 git push -u origin main
 ```
 
@@ -61,3 +61,5 @@ The GitHub Actions workflow checks Python syntax on pushes and pull requests; it
 ## Security and privacy
 
 Use this app only where recording and AI assistance are permitted. Avoid committing resumes, transcripts, interview history, or credentials. Resume/job-description context and transcribed questions may be transmitted to the configured API.
+
+The app is branded as **BhumajiAI**. Existing credential, settings, and history identifiers are retained for compatibility with previous versions.

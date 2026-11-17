@@ -45,11 +45,11 @@ class Window(QMainWindow):
         self.live_timer = QTimer(self)
         self.live_timer.setInterval(8000)
         self.live_timer.timeout.connect(self.live_chunk)
-        self.setWindowTitle('Universal AI Interview Assistant V4')
+        self.setWindowTitle('BhumajiAI')
         self.resize(670, 660)
         root = QWidget()
         layout = QVBoxLayout(root)
-        layout.addWidget(QLabel('Universal AI Interview Practice — choose any job role'))
+        layout.addWidget(QLabel('BhumajiAI — Interview practice for any job role'))
         layout.addWidget(QLabel('Use only where AI assistance is allowed. Audio is sent to OpenAI for transcription.'))
 
         row = QHBoxLayout()
@@ -446,6 +446,9 @@ class Window(QMainWindow):
 
 def main():
     app = QApplication(sys.argv)
+    app.setApplicationName('BhumajiAI')
+    app.setApplicationDisplayName('BhumajiAI')
+    app.setOrganizationName('BhumajiAI')
     app.setQuitOnLastWindowClosed(False)
     window = Window()
     window.show()
